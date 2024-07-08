@@ -369,6 +369,7 @@ class Task:
 
                     elif salenum == 8:
                         logger.warning("【等待余票】暂时售罄")
+                        self.goldTime = int(time())
 
                     else:
                         logger.warning("【等待余票】未知num! 请提交给开发者")
